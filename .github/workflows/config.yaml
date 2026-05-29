@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: CI-CD-Pipeline-Inspire-Offices
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate-compose:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Code ophalen
+        uses: actions/checkout@v4
+
+      - name: Check compose bestand
+        run: docker compose config
