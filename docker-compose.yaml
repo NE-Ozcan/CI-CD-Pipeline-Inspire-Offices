@@ -1,7 +1,7 @@
-version: '3'
+   version: '3.8'
 
-services:
-  web:
-    image: nginx
-    ports:
-      - "8080:80" 
+   services:
+     webportaal:
+       build: .
+       ports:
+         - "5000:5000"
