@@ -1,46 +1,24 @@
- # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
-
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 name: CI-CD-Pipeline-Inspire-Offices
 
-
 on:
-
   push:
-
     branches:
-
       - main
-
   pull_request:
-
     branches:
-
       - main
-
 
 jobs:
-
-  validate-and-build:a
-
-  #had hier validate-and-compose, geen build
-
+  validate-and-build:
     runs-on: ubuntu-latest
 
-
     steps:
-
       - name: Code ophalen uit repository
-
         uses: actions/checkout@v4
 
-
       - name: Controleer Docker Compose structuur
-
         run: docker compose config
 
-
       - name: Bouw de Docker Image (Fase 2 Validatie)
-
         run: docker compose build
-
-        #Bij 1e code was docker compose build er niet 
