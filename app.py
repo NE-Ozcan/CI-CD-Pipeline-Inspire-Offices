@@ -6,6 +6,6 @@ app = Flask(__name__)
 def home():
     return "<h1>Welkom bij het Inspire Offices Beheerportaal!</h1>" + \
              "<p> Gemaakt door: Yassin , Mustafa, Emir, Musa, Moh en Krijn. </p>" + \
-             "<p> Adem in en uit. </p>"
+             "<p> Adem in , en uit. </p>"
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
