@@ -23,7 +23,7 @@ def home():
             color: #1a202c;
         }
         .card {
-            background: black;
+            background: white;
             border-radius: 16px;
             padding: 48px 64px;
             box-shadow: 0 4px 24px rgba(0,0,0,0.1);
@@ -93,7 +93,7 @@ def home():
     <div class="card">
         <div class="logo">🏢 Inspire Offices Beheerders site</div>
         <p class="tagline">Dit is het Inspire Offices Beheerportaal!</p>
-        <p style="color:#475569;font-size:0.9rem;margin-bottom:8px;">Gemaakt door: Emir.</p>
+        <p style="color:#475569;font-size:0.9rem;margin-bottom:8px;">Gemaakt door:Emir.</p>
         <p style="color:#475569;font-size:0.9rem;margin-bottom:16px;">A.</p>
         <div class="version-badge">Sprint Oplevering — v1.0</div>
         <div class="status">
