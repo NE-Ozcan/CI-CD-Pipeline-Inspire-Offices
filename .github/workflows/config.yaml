@@ -23,7 +23,7 @@ jobs:
       - name: Bouw de Docker Image (Fase 2 Validatie)
         run: docker compose build
       
-      # Tussenstap: Zet de builder aan voor de push-actie
+      # Zet de builder aan voor de push-actie
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
