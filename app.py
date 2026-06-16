@@ -23,7 +23,7 @@ def home():
             color: #1a202c;
         }
         .card {
-            background: white;
+            background: red;
             border-radius: 16px;
             padding: 48px 64px;
             box-shadow: 0 4px 24px rgba(0,0,0,0.1);
