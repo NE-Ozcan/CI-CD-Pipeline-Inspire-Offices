@@ -12,7 +12,8 @@ on:
 jobs:
   validate-and-build:
     runs-on: ubuntu-latest
-
+    timeout-minutes: 15
+    
     steps:
       - name: Code ophalen uit repository
         uses: actions/checkout@v4
@@ -26,7 +27,7 @@ jobs:
       # Zet de builder aan voor de push-actie
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-        
+
 # --- FASE 2 PREPARATION: Security Scan (Aanbevolen in Risicoanalyse) ---
     # - name: Run Trivy vulnerability scanner
     #   uses: aquasecurity/trivy-action@master
