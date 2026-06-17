@@ -26,7 +26,15 @@ jobs:
       # Zet de builder aan voor de push-actie
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-
+        
+# --- FASE 2 PREPARATION: Security Scan (Aanbevolen in Risicoanalyse) ---
+    # - name: Run Trivy vulnerability scanner
+    #   uses: aquasecurity/trivy-action@master
+    #   with:
+    #     image-ref: 'necatiemir/pipeline_inspire:latest'
+    #     format: 'table'
+    #     exit-code: '1' # Zorgt ervoor dat de pijplijn stopt bij een High/Critical lek
+    # -----------------------------------------------------------------------
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
