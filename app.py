@@ -412,7 +412,7 @@ HTML_TEMPLATE = """
 
   <section class="hero">
     <div class="hero-eyebrow">Fontys ICT — Proftaak 2025</div>
-    <h1 class="hero-title">Van <em>kwetsbaar netwerk</em> naar Zero Trust infrastructuur</h1>
+    <h1 class="hero-title">Van <em>kwetsbaar netwerk</em> naar Zero Trust infrastructuur TEST 1.0</h1>
     <p class="hero-sub">Hoe een team van Fontys ICT-studenten in 15 weken een veilige, schaalbare basis bouwde voor Inspire Offices — van fysiek lab tot cloud.</p>
     <div class="hero-meta">
       <div class="meta-item">
